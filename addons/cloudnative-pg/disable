@@ -19,6 +19,8 @@ cnpg_disable() {
 		exit 1
 	fi
 
+        rm -f "${SNAP_DATA}/bin/kubectl-cnpg"
+
 	echo "CloudNativePG uninstalled"
 }
 
